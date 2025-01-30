@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="fi">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Ikälaskuri</title>
+        <link rel="stylesheet" href="styles.css">
+        <script src="script.js"></script>
+    </head>
+    <body>
+        <div class="container">
+            <h1>Ikälaskuri</h1>
+            <div class="laskin">
+                <div class="input-group">
+                    <label>Syötä henkilötunnus:</label>
+                    <input class="input" type="text" id="hetu" placeholder="PPKKVVXXXXX" minlength="11" maxlength="11">
+                </div>
+                <div id="error" class="error"></div>
+                <div id="result" class="tulos">
+                    <p>Olet tänään: <span id="years">-</span> vuotta, <span id="months">-</span> kuukautta ja <span id="days">-</span> päivää vanha</p>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
