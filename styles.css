@@ -14,10 +14,8 @@ body {
 }
 
 .container {
-    background-color: #edf1f7;
     padding: 2em;
     border-radius: 10px;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
     width: 35em;
 }
 
@@ -41,7 +39,7 @@ h1 {
 
 label {
     font-weight: bold;
-    color: #333;
+    color: cornflowerblue;
 }
 
 input {
@@ -50,6 +48,7 @@ input {
     border-radius: 10px;
     font-size: 1em;
     text-align: center;
+    border-radius: 50px;
 }
 
 input:focus {
@@ -62,18 +61,61 @@ input:focus {
 }
 
 .tulos {
-    background-color: #f8f9fa;
     padding: 1em;
-    border-radius: 10px;
+    border-radius: 50px;
     text-align: center;
-    border: 2px solid #333;
-}
-
-.tulos span {
-    font-weight: bold;
     color: cornflowerblue;
+    margin-top: -2em;
 }
 
+.tulos p {
+    margin: 0;
+    font-weight: bold;
+}
+
+.age-info {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1em;
+    margin: 1em 0;
+    color: whitesmoke;
+}
+
+.age-info p {
+    display: flex;
+    flex-direction: column;
+}
+
+.age-info span {
+    margin-bottom: 1em;
+}
+
+#years, #months, #days {
+    border: 3px solid;
+    border-radius: 100px;
+    font-weight: bold;
+    height: 6em;
+    width: 6em;
+    margin-left: 1em;
+    margin-right: 1em;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    padding-top: 30%;
+}
+
+#years {
+    border-color: red;
+}
+
+#months {
+    border-color: blue; 
+}
+
+#days {
+    border-color: green; 
+}
 
 @media (max-width: 768px) {
 
@@ -83,5 +125,12 @@ input:focus {
 
     .tulos {
         font-size: 1em;
+    }
+
+    #years, #months, #days {
+        margin-left: 0.1em;
+        margin-right: 0.1em;
+        margin-top: 1em;
+        padding-top: 35%;
     }
 }
